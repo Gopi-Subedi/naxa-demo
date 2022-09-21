@@ -1,0 +1,2 @@
+export const GET_PROJECT_LIST = "GET_PROJECT_LIST";
+export const SET_PROJECT_LIST = "SET_PROJECT_LIST";

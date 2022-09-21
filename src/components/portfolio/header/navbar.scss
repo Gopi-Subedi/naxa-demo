@@ -1,0 +1,84 @@
+$active-color: #124af4;
+$hover-color: #124af4;
+$back-color: #ffdc1c;
+$hover-bkcolor: #ffab00;
+
+.navbar-container {
+  height: 62vh;
+  background-color: rgb(240, 240, 240) !important;
+  background-repeat: no-repeat;
+  background-image: url(../../../resource/images/navback.svg);
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+
+  .top-container {
+    padding: 7px 10px;
+    background: $back-color;
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    transition: all ease-in-out 5s;
+
+    .top-text {
+      &:hover {
+        color: $active-color;
+        cursor: pointer;
+        font-size: 12.5px;
+      }
+    }
+  }
+
+  .nav-container {
+    .row {
+      height: 35px;
+      align-items: center;
+
+      .logo-container {
+        height: 100%;
+        .actual-logo {
+          //   width: 100%;
+          height: 100%;
+        }
+      }
+      .navLinks {
+        justify-content: space-evenly;
+        font-size: 13px;
+        .link {
+          cursor: pointer;
+          text-decoration: none;
+          color: black;
+
+          .active {
+            color: black;
+          }
+          &:hover {
+            color: $hover-color;
+          }
+        }
+        .deactive {
+          cursor: not-allowed;
+        }
+      }
+      .lTalk {
+        width: 130px;
+        padding: 5px;
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        background-color: $back-color;
+        border: none;
+        color: $active-color;
+        cursor: pointer;
+
+        &:hover {
+          font-size: 13.5px;
+          background-color: $hover-bkcolor;
+        }
+      }
+    }
+  }
+}

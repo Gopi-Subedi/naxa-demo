@@ -1,0 +1,140 @@
+$active-color: #124af4;
+$hover-color: #124af4;
+$back-color: #ffdc1c;
+$hover-bkcolor: #ffab00;
+$project: white;
+
+.portfolio-container {
+  height: fit-content;
+  background: transparent;
+  position: relative;
+  z-index: 1500;
+  top: 25vh;
+  width: 100%;
+
+  .portfolio-inner {
+    .page-title {
+      display: flex;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 800;
+      color: $hover-bkcolor;
+    }
+    .page-quote {
+      font-size: 38px;
+      margin-top: 4vh;
+    }
+    .portfolio-links {
+      border: none;
+      margin-top: 9vh;
+      height: fit-content;
+      align-items: center;
+      padding: 10px;
+      background-color: white;
+      position: relative;
+      margin-left: 0px !important;
+      z-index: 800;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+      .portLink {
+        font-size: 14px;
+        padding: 5px 8px;
+        align-items: center;
+        height: fit-content;
+        color: #333132;
+        cursor: pointer;
+
+        &:first-child {
+          background-color: $back-color;
+          color: $active-color;
+        }
+
+        &:hover {
+          background-color: $back-color;
+          color: $active-color;
+        }
+      }
+    }
+
+    .spiner-container {
+      position: relative;
+      height: 67vh;
+      .spiner {
+        position: relative;
+        top: 30%;
+      }
+    }
+
+    .projects {
+      margin-top: 25vh;
+      justify-content: space-between;
+
+      .project-card {
+        font-weight: 600;
+        padding: 0px !important;
+        border: none;
+        background-color: rgb(218, 218, 218);
+        margin-bottom: 15vh;
+        width: 48%;
+        cursor: pointer;
+
+        &:hover {
+          margin-top: -10px;
+          // transition: ease-in 1s;
+          box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+            rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+        }
+
+        @media screen and (max-width: 992px) {
+          width: 100% !important;
+        }
+
+        .card-details {
+          padding: 25px 20px;
+          .card-title {
+            font-size: 16px;
+            font-weight: 700 !important;
+            // color: $project;
+          }
+          .card-subTitle {
+            padding-top: 15px;
+            font-size: 13px;
+          }
+          .client-detail,
+          .time-detail {
+            padding-top: 15px;
+            font-size: 13px;
+            .card-subheader {
+              color: $hover-bkcolor;
+            }
+            .client-subData {
+              display: flex;
+            }
+          }
+        }
+        .sample-img {
+          margin-top: 25px;
+          padding: 0px !important;
+          height: 500px;
+
+          .actual-sample {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+  .back-to-top {
+    position: fixed;
+    z-index: 2000 !important;
+    bottom: 60px;
+    right: 30px;
+    font-size: 100px;
+    background: white;
+    border-radius: 50%;
+    color: $active-color;
+    cursor: pointer;
+  }
+}

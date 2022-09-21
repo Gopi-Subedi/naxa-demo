@@ -1,0 +1,58 @@
+$active-color: #124af4;
+$hover-color: #124af4;
+$back-color: #ffdc1c;
+$hover-bkcolor: #ffab00;
+$project: white;
+
+.upfooter-container {
+  position: relative;
+  top: 25vh;
+  padding: 30px 10px;
+  background: transparent
+    linear-gradient(59deg, #05f, #05f 20%, #001acb 70%, #001acb 97%, #001acb) 0
+    0 no-repeat padding-box;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35vh;
+
+  .up-inner {
+    width: 60%;
+    .up-title {
+      font-size: 28px;
+      font-weight: 600;
+      color: white;
+      padding: 5px;
+    }
+    .up-desc {
+      font-size: 13px;
+      color: white;
+      padding: 5px;
+    }
+
+    .btn-ltalk {
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+      .talk-btn {
+        width: 130px;
+        padding: 5px;
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        background-color: $back-color;
+        border: none;
+        color: $active-color;
+        cursor: pointer;
+
+        &:hover {
+          font-size: 13.5px;
+          background-color: $hover-bkcolor;
+        }
+      }
+    }
+    @media screen and (max-width: 800px) {
+      width: 85% !important;
+    }
+  }
+}
