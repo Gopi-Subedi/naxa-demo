@@ -1,9 +1,9 @@
 import "./App.css";
-import Portfolio from "./components/portfolio/body/portfolio";
+import Portfolio from "./components/portfolio/portfolio";
 import Navbar from "./components/portfolio/header/navbar";
 import { Route, Routes } from "react-router-dom";
-import UpperFooter from "./components/portfolio/footer/upperFooter";
-import BottomFooter from "./components/portfolio/footer/bottomFooter";
+import UpperFooter from "./components/layout/footer/upperFooter";
+import BottomFooter from "./components/layout/footer/bottomFooter";
 import ContactForm from "./components/contact/formSection/contactForm";
 import BasicMap from "./components/contact/mapSection/basicMap";
 

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./portfolio.scss";
 import { HiOutlineArrowCircleUp } from "react-icons/hi";
 import { useDispatch, useSelector } from "react-redux";
-import { getProjectList } from "../../redux/action";
+import { getProjectList } from "../redux/action";
 
 export default function Portfolio() {
   const dispatch = useDispatch();
