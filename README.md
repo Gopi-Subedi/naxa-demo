@@ -82,3 +82,7 @@ This project is an attempt to replicate the https://naxa.com.np/portfolio/keyhig
 -> React-Redux ===> npm install react-redux
 -> Redux saga ===> npm install redux-saga
 -> React-Leaflet ==> npm install react-leaflet leaflet
+
+### Note:
+
+-> Only the homepage(Portfolio) and Let's Talk buttons are functional.
