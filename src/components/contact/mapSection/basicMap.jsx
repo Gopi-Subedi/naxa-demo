@@ -27,9 +27,7 @@ export default function BasicMap() {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <Marker position={mapPosition}>
-          <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
-          </Popup>
+          <Popup>Kathamndu, Nepal</Popup>
         </Marker>
       </MapContainer>
     </div>

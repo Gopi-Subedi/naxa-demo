@@ -1,6 +1,6 @@
 import "./App.css";
 import Portfolio from "./components/portfolio/portfolio";
-import Navbar from "./components/portfolio/header/navbar";
+import Navbar from "./components/layout/header/navbar";
 import { Route, Routes } from "react-router-dom";
 import UpperFooter from "./components/layout/footer/upperFooter";
 import BottomFooter from "./components/layout/footer/bottomFooter";

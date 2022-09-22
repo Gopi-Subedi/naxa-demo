@@ -11,6 +11,7 @@ export default function ContactForm() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectedFile, setSelectedFile] = useState(null);
   const [isSubmit, setIsSubmit] = useState(false);
+  const [formValidated, setFormValidated] = useState(false);
 
   const handleImageRemove = (data) => {
     console.log(data);
@@ -81,6 +82,7 @@ export default function ContactForm() {
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       console.log("Proceed to API");
+      setFormValidated(true);
     }
   }, [formErrors]);
 
@@ -247,6 +249,11 @@ export default function ContactForm() {
                   Apply Now
                 </button>
               </div>
+              {formValidated && fieldCheck() && (
+                <div className="form-message">
+                  FORM SUCCESSFULLY VALIDATED!!!
+                </div>
+              )}
             </form>
           </div>
         </div>

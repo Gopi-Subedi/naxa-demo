@@ -5,7 +5,6 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
 
 export default function Navbar() {
-  const [showMenu, setShowMenu] = useState(false);
   const navigate = useNavigate();
   const [viewWidth, setViewWidth] = useState(window.innerWidth);
 
