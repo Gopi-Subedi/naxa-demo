@@ -1,0 +1,10 @@
+.map-container {
+  position: relative;
+  top: 30vh;
+  height: fit-content;
+  margin-bottom: 15vh;
+  .map {
+    height: 50vh;
+    width: 100%;
+  }
+}

@@ -68,3 +68,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### NAXA Demo
+
+This project is an attempt to replicate the https://naxa.com.np/portfolio/keyhighlights wbsite.
+
+### Library used:
+
+-> SASS (SCSS) ===> npm install node-sass
+-> React Router Dom ===> npm install react-router-dom
+-> React Icon ===> npm install react-icons
+-> Redux/Redux-Toolkit ===> npm install @reduxjs/toolkit
+-> React-Redux ===> npm install react-redux
+-> Redux saga ===> npm install redux-saga
+-> React-Leaflet ==> npm install react-leaflet leaflet
